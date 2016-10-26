@@ -40,6 +40,22 @@ hr {
   background: #fff;
   border: 1px solid $darkGray;
   border-radius: 10px;
+
+  hr {
+    clear: both;
+  }
+
+  img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .date {
+    float: right;
+    margin-top: 25px;
+    color: $lightGray;
+  }
 }
 
 #footer {
