@@ -11,18 +11,8 @@
         {{para}}<br>
       {{/each}}
     </p>
-    {{#link-to 'index' class='pull-right'}}Read more{{/link-to}}
+    <div  class='pull-right'>
+      {{#link-to 'post' post.id}}Read more{{/link-to}}
+    </div>
   </div>
 </div>
-
-<!-- <div class='well post'>
-  <img src={{post.image}} alt={{post.title}}>
-  <h3 class='pull-left'>{{post.title}}</h3>
-  <p class='date'>{{post.date}}</p>
-  <hr>
-  <p>
-    {{#each paragraphs as |para|}}
-      {{para}}<br>
-    {{/each}}
-  </p>
-</div> -->

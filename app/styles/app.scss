@@ -5,6 +5,7 @@ $lightGray: #9ba894;
 body {
   color: $darkGray;
   background: #def2d5;
+  font-family: 'Proza Libre', sans-serif;
 }
 
 hr {
@@ -23,11 +24,13 @@ hr {
   }
 
   .navbar-header {
-    padding-top: 50px;
+    padding-top: 47px;
   }
 
-  .navbar-brand h1 {
-    font-size: 1.5em;
+  h1.navbar-brand {
+    font-size: 2em;
+    color: $darkGray;
+    font-family: 'Oswald', sans-serif;
   }
 
   .navbar-nav {
@@ -51,11 +54,24 @@ hr {
     border-radius: 5px;
   }
 
+  .img-detail {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+
   .date {
     float: right;
     margin-top: 25px;
     color: $lightGray;
   }
+
+  .body-detail {
+    padding: 30px;
+  }
+}
+
+.post-detail {
+  padding: 40px;
 }
 
 #footer {

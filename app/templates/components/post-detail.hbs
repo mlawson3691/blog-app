@@ -1,0 +1,21 @@
+<div class='well post post-detail'>
+  <h3 class='pull-left'>
+    {{post.title}}
+    {{#unless editPost}}
+      <button {{action 'editPost'}} class='btn btn-link'>Edit</button>
+    {{/unless}}
+  </h3>
+  <p class='date'>{{post.date}}</p>
+  <hr>
+  {{#if editPost}}
+    {{update-post post=post update="update"}}
+    <hr>
+  {{/if}}
+  <img class='img-detail' src={{post.image}} alt={{post.title}}>
+  <p class='body-detail'>
+    {{#each paragraphs as |para|}}
+      {{para}}<br>
+    {{/each}}
+  </p>
+  <button {{action 'delete' post}} class='btn btn-link pull-right'>Delete</button>
+</div>
