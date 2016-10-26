@@ -7,11 +7,13 @@ export default Ember.Component.extend({
   }),
 
   preview: Ember.computed('post.body', function() {
-    var words = this.get('post.body').split('<br>').join(' ').split(' ');
-    if (words.length > 20) {
-      return words.slice(0, 20).join(' ') + '...';
+    var words = this.get('post.body').split(' ');
+    var preview = '';
+    if (words.length > 30) {
+      preview = words.slice(0, 30).join(' ') + '...';
     } else {
-      return words.join(' ');
+      preview = words.join(' ');
     }
+    return preview.split('<br>');
   })
 });

@@ -6,7 +6,11 @@
     <img src={{post.image}} alt={{post.title}}>
   </div>
   <div class='col-sm-6'>
-    <p>{{preview}}</p>
+    <p>
+      {{#each preview as |para|}}
+        {{para}}<br>
+      {{/each}}
+    </p>
     {{#link-to 'index' class='pull-right'}}Read more{{/link-to}}
   </div>
 </div>
