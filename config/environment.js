@@ -4,13 +4,24 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'blog-app',
     environment: environment,
-    baseURL: '/',
+    rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+      },
+      EXTEND_PROTOTYPES: {
+        // Prevent Ember Data from overriding Date.parse.
+        Date: false
       }
+    },
+
+    firebase: {
+      apiKey: "AIzaSyCPH0ub4A2CjD7LGJ8hafNlfFt_waWr9G8",
+      authDomain: "blog-app-1f8da.firebaseapp.com",
+      databaseURL: "https://blog-app-1f8da.firebaseio.com",
+      storageBucket: "blog-app-1f8da.appspot.com"
     },
 
     APP: {
@@ -29,7 +40,6 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
-    ENV.baseURL = '/';
     ENV.locationType = 'none';
 
     // keep test console output quieter
