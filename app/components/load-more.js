@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   actions: {
     loadMore(postCount) {
       var currentCount = this.get('postsToShow');
-      currentCount++;
+      currentCount += 2;
       this.set('postsToShow', currentCount);
       if (this.get('postsToShow') >= postCount) {
         this.set('showMore', false);

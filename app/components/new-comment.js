@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   actions: {
@@ -9,6 +10,7 @@ export default Ember.Component.extend({
         date: this.get('date'),
         post: this.get('post')
       };
+      console.log(this.get('date'));
       this.set('body', '');
       this.set('author', '');
       this.set('date', '');

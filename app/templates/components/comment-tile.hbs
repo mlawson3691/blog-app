@@ -1,7 +1,7 @@
 <div class='well post commentTile'>
   <h4>{{comment.author}}</h4>
   <button {{action 'delete' comment}} class='btn btn-link pull-right'>Delete</button>
-  <h5 class='lightText'>on {{comment.date}}</h5>
+  <h5 class='lightText'>on {{moment-format comment.date 'MMM D, YYYY'}}</h5>
   <hr>
   <p>{{comment.body}}</p>
 </div>

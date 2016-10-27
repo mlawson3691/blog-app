@@ -5,7 +5,7 @@
       <button {{action 'editPost'}} class='btn btn-link'>Edit</button>
     {{/unless}}
   </h3>
-  <p class='date'>{{post.date}}</p>
+  <p class='date'>{{moment-format post.date 'MMM D, YYYY'}}</p>
   <hr>
   {{#if editPost}}
     {{update-post post=post update="update" cancelEdit="cancelEdit"}}
