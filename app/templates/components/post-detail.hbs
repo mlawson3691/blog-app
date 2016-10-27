@@ -8,7 +8,7 @@
   <p class='date'>{{post.date}}</p>
   <hr>
   {{#if editPost}}
-    {{update-post post=post update="update"}}
+    {{update-post post=post update="update" cancelEdit="cancelEdit"}}
     <hr>
   {{/if}}
   <img class='img-detail' src={{post.image}} alt={{post.title}}>

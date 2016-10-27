@@ -10,6 +10,9 @@ export default Ember.Component.extend({
         date: this.get('date')
       };
       this.sendAction('update', post, params);
+    },
+    cancelEdit() {
+      this.sendAction('cancelEdit');
     }
   }
 });

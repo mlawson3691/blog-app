@@ -14,6 +14,9 @@ export default Ember.Component.extend({
       this.set('editPost', false);
       this.sendAction('update', post, params);
     },
+    cancelEdit() {
+      this.set('editPost', false);
+    },
     delete(post) {
       this.sendAction('destroyPost', post);
     }
