@@ -15,6 +15,10 @@ hr {
 a, a:focus, .btn-link, .btn-link:focus {
   color: $lightGray;
   outline: 0 !important;
+
+  h3 {
+    color: $darkGray;
+  }
 }
 
 a:hover, .btn-link:hover {

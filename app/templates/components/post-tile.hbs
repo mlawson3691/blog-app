@@ -1,5 +1,5 @@
 <div class='well post row'>
-  <h3 class='pull-left'>{{post.title}}</h3>
+  {{#link-to 'post' post.id}}<h3 class='pull-left'>{{post.title}}</h3>{{/link-to}}
   <p class='date'>{{post.date}}</p>
   <hr>
   <div class='col-sm-6'>
