@@ -2,6 +2,9 @@
   <div class='col-sm-9'>
     {{post-detail post=model destroyPost="destroyPost" update="update"}}
     <div id='comments'>
+      {{#each model.comments as |comment|}}
+        {{comment-tile comment=comment}}
+      {{/each}}
       {{new-comment post=model saveComment="saveComment"}}
     </div>
   </div>

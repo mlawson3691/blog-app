@@ -89,6 +89,19 @@ a:hover, .btn-link:hover {
   border-radius: 0;
 }
 
+.commentTile {
+  overflow: hidden;
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .lightText {
+    color: $lightGray;
+  }
+}
+
 #page-body {
   margin-top: 150px;
 }
