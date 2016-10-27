@@ -4,7 +4,7 @@ $lightGray: #9ba894;
 
 body {
   color: $darkGray;
-  background: #def2d5;
+  background: #C3D59D; // C3D59D - color from logo
   font-family: 'Proza Libre', sans-serif;
 }
 
@@ -125,5 +125,11 @@ a:hover, .btn-link:hover {
 }
 
 #footer {
-  color: $lightGray;
+  color: white;
+  text-align: center;
+
+  hr {
+    border-color: white;
+    margin-bottom: 15px;
+  }
 }
