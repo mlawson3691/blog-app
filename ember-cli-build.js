@@ -7,6 +7,8 @@ module.exports = function(defaults) {
     // Add options here
   });
   app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+  // app.import('/node_modules/ember-moment/app/services/moment.js');
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
