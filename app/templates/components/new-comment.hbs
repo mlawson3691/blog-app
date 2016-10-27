@@ -1,26 +1,19 @@
 <div class='well post'>
-  {{#if newComment}}
-    <h3>Leave a Comment:</h3>
-    <hr>
-    <form id='commentForm'>
-      <div class='form-group'>
-        <label for='author'>Your name:</label>
-        {{input id='author' value=author class='form-control'}}
-      </div>
-      <div class='form-group'>
-        <label for='commentBody'>Comment:</label>
-        {{textarea rows='3' id='commentBody' value=body class='form-control'}}
-      </div>
-      <div class='form-group'>
-        <label for='date'>Date:</label>
-        {{input value=date id='date' type='date' class='form-control'}}
-      </div>
-      <button {{action 'saveComment'}} class='btn btn-default'>Comment</button>
-      <button {{action 'cancelComment'}} class='btn btn-link'>Cancel</button>
-    </form>
-  {{else}}
-    <div id='leaveCommentButton'>
-      <button {{action 'startComment'}} class='btn btn-link'>Leave a Comment</button>
+  <h3>Leave a Comment:</h3>
+  <hr>
+  <form id='commentForm'>
+    <div class='form-group'>
+      <label for='author'>Your name:</label>
+      {{input id='author' value=author class='form-control'}}
     </div>
-  {{/if}}
+    <div class='form-group'>
+      <label for='commentBody'>Comment:</label>
+      {{textarea rows='3' id='commentBody' value=body class='form-control'}}
+    </div>
+    <div class='form-group'>
+      <label for='date'>Date:</label>
+      {{input value=date id='date' type='date' class='form-control'}}
+    </div>
+    <button {{action 'saveComment'}} class='btn btn-default'>Comment</button>
+  </form>
 </div>

@@ -1,12 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  postsToShow: 1,
+  postsToShow: 2,
+  postCount: 3,
+  showMore: true,
 
   model() {
     return this.store.query('post',
       {orderBy: 'date',
-      limitToFirst: this.get('postsToShow')
+      limitToLast: this.get('postsToShow')
+    }).then(function(posts) {
+      var allPosts = posts.toArray().reverse();
+      return allPosts;
     });
   },
 
@@ -16,10 +21,8 @@ export default Ember.Route.extend({
       newPost.save();
       this.transitionTo('index');
     },
-    loadMore() {
-      var currentCount = this.get('postsToShow');
-      currentCount++;
-      this.set('postsToShow', currentCount);
+    loadMore(newPostsToShow) {
+      this.set('postsToShow', newPostsToShow);
       this.refresh();
     }
   }

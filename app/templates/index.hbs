@@ -3,7 +3,7 @@
     {{#each model as |post|}}
         {{post-tile post=post}}
     {{/each}}
-    <button {{action 'loadMore'}} class='btn btn-square center-block'>Load More</button>
+    {{load-more loadMore="loadMore" postCount=postCount}}
   </div>
   <div class='col-sm-4'>
     {{new-post savePost="savePost"}}

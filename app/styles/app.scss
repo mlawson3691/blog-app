@@ -29,6 +29,10 @@ a:hover, .btn-link:hover {
   text-decoration: none;
 }
 
+.btn-default {
+  border-radius: 0;
+}
+
 .btn-square {
   background: white;
   color: $darkGray;
