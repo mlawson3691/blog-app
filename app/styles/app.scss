@@ -19,11 +19,26 @@ a, a:focus, .btn-link, .btn-link:focus {
   h3 {
     color: $darkGray;
   }
+  h3:hover {
+    color: $lightGray;
+  }
 }
 
 a:hover, .btn-link:hover {
   color: $darkGray;
   text-decoration: none;
+}
+
+.btn-square {
+  background: white;
+  color: $darkGray;
+  border: 1px solid $darkGray;
+  border-radius: 0;
+  outline: 0 !important;
+}
+
+.btn-square:hover {
+  color: $lightGray;
 }
 
 .navbar {
