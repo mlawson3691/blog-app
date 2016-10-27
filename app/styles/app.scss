@@ -12,6 +12,16 @@ hr {
   border-color: $lightGray;
 }
 
+a, a:focus, .btn-link, .btn-link:focus {
+  color: $lightGray;
+  outline: 0 !important;
+}
+
+a:hover, .btn-link:hover {
+  color: $darkGray;
+  text-decoration: none;
+}
+
 .navbar {
   height: 130px;
   font-size: 1.1em;
@@ -81,6 +91,20 @@ hr {
 
 #page-body {
   margin-top: 150px;
+}
+
+#comments {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#comments > div > div {
+  padding: 20px 40px;
+}
+
+#leaveCommentButton .btn {
+  font-size: 1.2em;
+  width: 100%;
 }
 
 #footer {
